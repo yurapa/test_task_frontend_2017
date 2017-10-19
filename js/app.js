@@ -13,3 +13,21 @@ for (var i = 0; i < acc.length; i++) {
         }
     }
 }
+
+$('ul.subMenu').hide();
+
+$('.navigation a.dropdown-btn').on('click', function (event) {
+    if ($(this).next().css('display') === 'none') {
+        $(this).next().slideDown('normal', function () {
+            // Animation complete.
+        });
+        $(this).addClass("active");
+    } else {
+        $(this).next().slideUp('fast', function () {
+            // Animation complete.
+        });
+        $(this).removeClass("active");
+    }
+
+    event.preventDefault();
+});
