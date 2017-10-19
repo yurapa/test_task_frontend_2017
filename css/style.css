@@ -1,6 +1,7 @@
 @font-face {
     font-family: "HelveticaInseratLT";
-    src: url("../fonts/Helvetica_Inserat_LT.ttf") format("truetype");
+    src: url("../fonts/HelveticaInseratLTStd-Roman.eot");
+    src: url("../fonts/HelveticaInseratLTStd-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaInseratLTStd-Roman.woff") format("woff"), url("../fonts/HelveticaInseratLTStd-Roman.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
