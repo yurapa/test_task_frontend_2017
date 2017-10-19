@@ -1,14 +1,14 @@
-var acc = document.querySelectorAll(".accordion");
+var acc = $(".accordion");
 
 for (var i = 0; i < acc.length; i++) {
     acc[i].onclick = function() {
         for (var j = 0; j < acc.length; j++) {
             if (acc[j] !== this) {
-                acc[j].classList.remove("active");
-                acc[j].nextElementSibling.classList.remove("show");
+                $( acc[j] ).removeClass("active");
+                $( acc[j] ).next().removeClass("show");
             } else {
-                this.classList.toggle("active");
-                this.nextElementSibling.classList.toggle("show");
+                $( this ).toggleClass( "active" );
+                $( this ).next().toggleClass( "show" );
             }
         }
     }
