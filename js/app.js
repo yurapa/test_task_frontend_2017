@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("accordion");
+var acc = document.querySelectorAll(".accordion");
 
 for (var i = 0; i < acc.length; i++) {
     acc[i].onclick = function() {
